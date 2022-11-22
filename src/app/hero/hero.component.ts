@@ -13,4 +13,5 @@ export class HeroComponent implements OnInit {
   ngOnInit(): void {
   }
   @Input() hero: IHero
+  edit: boolean = false
 }
