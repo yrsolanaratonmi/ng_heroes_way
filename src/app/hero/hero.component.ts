@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {IHero} from "./hero.interface";
 
 @Component({
   selector: 'app-hero',
@@ -11,5 +12,5 @@ export class HeroComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  @Input() hero: IHero
 }
